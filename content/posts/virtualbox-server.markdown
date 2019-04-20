@@ -11,9 +11,8 @@ stylesheets: styles.css
 
 Just use [vagrant](https://www.vagrantup.com/intro/getting-started/).
 
-<br>
-<br>
-<br>
+=== === === === === === 
+ 
 
 1. I downloaded the ISO, installed it into virtualbox.
 
