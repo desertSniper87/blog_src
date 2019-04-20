@@ -3,11 +3,13 @@ slug: vbox-srv
 category: Computing
 tags: programming
 date: 2018-05-10
-modified: 2018-05-10
+modified: 2019-04-20
 summary: hi there.
 stylesheets: styles.css
 <!--Status: draft-->
-I decided to install a Ubuntu-Server as a guest VM in virtualbox just for shits and giggles (And for some educational purposes.)
+## Update 
+
+Just use [vagrant](https://www.vagrantup.com/intro/getting-started/).
 
 1. I downloaded the ISO, installed it into virtualbox.
 

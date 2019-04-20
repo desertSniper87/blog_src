@@ -58,7 +58,7 @@ STATIC_PATHS = ['haglSim', 'images']
 ARTICLE_EXCLUDES = ['haglSim']
 
 LANDING_PAGE_ABOUT = { 'title': "",
-                        'details': """Hello I am Samidhya Sarker. I am an aspiring Software Engineer currently on the market.
+                        'details': """Hello I am Samidhya Sarker. I am an aspiring Software Engineer currently working at Concitus.
                                       My old blogs can be found at 
                                       <a href="https://www.facebook.com/desertsniper87/notes"> Facebook Notes,</a>
                                       <a href="https://medium.com/@desertsniper87"> Medium, </a>
