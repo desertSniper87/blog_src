@@ -7,9 +7,13 @@ modified: 2019-04-20
 summary: hi there.
 stylesheets: styles.css
 <!--Status: draft-->
-## Update 
+## Update 2019-04-20
 
 Just use [vagrant](https://www.vagrantup.com/intro/getting-started/).
+
+<br>
+<br>
+<br>
 
 1. I downloaded the ISO, installed it into virtualbox.
 
