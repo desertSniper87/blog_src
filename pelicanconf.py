@@ -53,7 +53,16 @@ PLUGIN_PATHS = ['/home/torsho/pelican-plugins']
 
 # PUBLICATIONS_SRC = 'content/pubs.bib'
 
-STATIC_PATHS = ['haglSim', 'images']
+STATIC_PATHS = ['haglSim', 'images', 'extra']
+
+EXTRA_PATH_METADATA = {
+    # 'extra/custom.css': {'path': 'custom.css'},
+    # 'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},  # and this
+    # 'extra/CNAME': {'path': 'CNAME'},
+    # 'extra/LICENSE': {'path': 'LICENSE'},
+    # 'extra/README': {'path': 'README'},
+}
 
 ARTICLE_EXCLUDES = ['haglSim']
 
