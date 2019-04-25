@@ -31,7 +31,12 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('Facebook', 'http://www.facebook.com/desertsniper87'),
-          ('Twitter', 'https://twitter.com/desertSniper87'),)
+          ('Twitter', 'https://twitter.com/desertSniper87'),
+          ('GitHub', 'https://github.com/desertSniper87'),
+          ('LinkedIn', 'https://www.linkedin.com/in/desertsniper87/'),
+          ('stack-overflow', 'https://stackoverflow.com/users/7154462/desertsniper87'),
+          ('reddit', 'https://www.reddit.com/user/desertSniper87/'),
+          )
 
 DEFAULT_PAGINATION = False
 
@@ -41,17 +46,6 @@ RELATIVE_URLS = True
 THEME = "./themes/elegant"
 
 PLUGIN_PATHS = ['/home/torsho/pelican-plugins']
-# JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-# PLUGINS = ['i18n_subsites', 'pelican-cite']
-# PLUGINS = ['pelican_javascript']
-
-# I18N_SUBSITES = {
-    # 'bd': {
-        # 'SITENAME': 'তর্ষ@বাড়ি',
-        # }
-    # }
-
-# PUBLICATIONS_SRC = 'content/pubs.bib'
 
 STATIC_PATHS = ['haglSim', 'images', 'extra']
 
@@ -73,31 +67,5 @@ LANDING_PAGE_ABOUT = { 'title': "",
                                       <a href="https://medium.com/@desertsniper87"> Medium, </a>
                                       <a href="https://desertsniper87.wordpress.com"> WordPress </a>
                                       """}
-# ABOUT_ME = """Hello I am Samidhya Sarker. I am an aspiring Software Engineer currently on the market.
-                                      # My old blogs can be found at 
-                                      # <a href="https://www.facebook.com/desertsniper87/notes"> Facebook Notes,</a>
-                                      # <a href="https://medium.com/@desertsniper87"> Medium, </a>
-                                      # <a href="https://desertsniper87.wordpress.com"> WordPress </a>
-                                      # <br/>
-                                      # <h3>My Interests</h3>
-                                      # <div class="container" style="width:500px;">
-                                          # <div class="row"> 
-                                               # <div class="col-sm-3">
-                                                # <img class="img-responsive" src="images/gnu-card.jpg"/>
-                                               # </div>
-                                               # <div class="col-sm-3">
-                                                # <img class="img-responsive" src="images/arch-card-demo.jpg"/>
-                                               # </div>
-                                          # </div>
-                                          # <div class="row"> 
-                                               # <div class="col-sm-3">
-                                                # <img class="img-responsive" src="images/python-card.jpg"/>
-                                               # </div>
-                                               # <div class="col-sm-3">
-                                                # <img class="img-responsive" src="images/vim-card-demo.jpg"/>
-                                               # </div>
-                                          # </div>
-                                      # </div>
-                                      # I play <a href="https://www.igdb.com/users/desertsniper87/lists/played"> Video Games </a> and watch <a href="https://www.imdb.com/user/ur44018698/ratings"> Movies </a>.
-                                      # """
+
 
