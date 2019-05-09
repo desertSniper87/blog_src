@@ -4,6 +4,9 @@ themes/
 # ignore output files 
 output/
 
+#ignore plugins 
+plugins/
+
 # Created by https://www.gitignore.io/api/python,vim,pycharm+all
 # Edit at https://www.gitignore.io/?templates=python,vim,pycharm+all
 

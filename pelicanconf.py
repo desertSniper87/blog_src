@@ -45,7 +45,8 @@ RELATIVE_URLS = True
 
 THEME = "./themes/elegant"
 
-PLUGIN_PATHS = ['/home/torsho/pelican-plugins']
+PLUGIN_PATHS = ['./plugins/']
+PLUGINS = ['sitemap']
 
 STATIC_PATHS = ['haglSim', 'images', 'extra']
 
@@ -69,3 +70,6 @@ LANDING_PAGE_ABOUT = { 'title': "",
                                       """}
 
 
+SITEMAP = {
+    'exclude': ['tag/', 'category/', 'archives']
+}
