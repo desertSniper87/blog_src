@@ -59,6 +59,8 @@ EXTRA_PATH_METADATA = {
     # 'extra/README': {'path': 'README'},
 }
 
+COMMENTO_SITENAME = 'desertsniper87.github.io'
+
 ARTICLE_EXCLUDES = ['haglSim']
 
 LANDING_PAGE_ABOUT = { 'title': "",

@@ -8,7 +8,7 @@ modified: 2019-05-18
 
 Hi, recently I had to install a little endian machine to test out some old C code for academic ressons. I had choices of using Sun solaris for SPARC workstations or using a mips machine. I went on to install debian wheezy on qemu mips.
 
-First down load the qcow2 image.
+First download the appropriate vmlinux kernel and harddisk qcow2 image from Aurélien Jarno's ftp site.
 [https://people.debian.org/TLIDEaurel32/qemu/mips/](https://people.debian.org/~aurel32/qemu/mips/)
 
 ```bash
@@ -25,4 +25,5 @@ First down load the qcow2 image.
 ```bash
 sysctl -w net.ipv4.ping_group_range='0 2147483647'
 ```
-
+Now you can ssh into qemu. Password is root 
+ssh root@localhost -p 10022  
