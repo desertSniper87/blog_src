@@ -38,6 +38,35 @@ SOCIAL = (('Facebook', 'http://www.facebook.com/desertsniper87'),
           ('reddit', 'https://www.reddit.com/user/desertSniper87/'),
           )
 
+PROJECTS_TITLE = "Portfolio"
+PROJECTS = [
+            {
+             "name": "Maalamaal",
+             "url": "https://github.com/desertSniper87/maalamaal",
+             "description": "It's a simple ecommerce site made in Django, SQLite and Bootstrap.",
+            },
+            {
+             "name": "Routinify",
+             "url": "https://gitlab.com/desertSniper87/routinify",
+             "description": "It's a daily routine logger for Android",
+            },
+            {
+             "name": "RajukADA",
+             "url": "https://github.com/desertSniper87/rajukADA",
+             "description": "Rajuk Automated Development Authority was a project that was done in laravel/PHP for CSE-324 (Software Development).",
+            },
+            {
+             "name": "MoldYoMusic",
+             "url": "https://github.com/desertSniper87/MoldYoMusic",
+             "description": "It' one of my hobby projects that I use to transfer music to my youtube playlist from my spotify playlists. Made using Python, Sqlite3, Selenium webdriver.",
+            },
+            {
+             "name": "Bargaining Simulator",
+             "url": "https://desertsniper87.github.io/haglSim/",
+             "description": "A toy game written in VueJS.",
+            },
+           ]
+
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
