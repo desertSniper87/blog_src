@@ -1,15 +1,16 @@
-title: Installing debian mips on qemu
-slug: debian-mips-qemu
+title: Using SNI to run multiple SSL enabled sites in a single webserver.
+slug: sni
 category: computing
-date: 2019-05-09
-modified: 2019-05-18
-Status: draft 
+date: 2021-10-31
+modified: 2021-10-31
+<!--Status: draft -->
 
 ## The Problem 
 
 Sometimes we want to host multiple sites in the same server to minimize on server costs. We may run applications on different ports or map subdomains to different directories. But if we want to server websites on different domains, we have to take different approaches. 
 
 ### Solution: VirtualHosts
+
 Virtual hosting is a method for hosting multiple domain names (with separate handling of each name) on a single server (or pool of servers).
 
 Suppose, we have two websites having urls: www.example1.com and www.example2.com. For an apache web server, we can put the source of two servers in /var/www/example1 and /var/www/html2.
@@ -38,7 +39,10 @@ Listen 80
 
 SSL/TLS is a good way to provide security directly to the end users. If we want to use SSL/TLS encryption on connections using VirtualHosts, another complication arise.
 
+
 If we revisit the SSL/TLS basics and the OSI networking model, the TLS connection happens on layer 4 of the layer. The problem with using named virtual hosts over SSL is that named virtual hosts rely on knowing what hostname is being requested, and the request can't be read until the SSL connection is established. 
+
+![SNI connection]({filename}../images/tls-syn-ack.svg){ style="display: block; margin-left: auto; margin-right: auto; width: 50%;"}
 
 So, VirtualHosts cannot be used in addition to SSL certificates. 
 
