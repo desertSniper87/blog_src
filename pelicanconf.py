@@ -92,6 +92,8 @@ COMMENTO_SITENAME = 'desertsniper87.github.io'
 
 ARTICLE_EXCLUDES = ['haglSim']
 
+LANDING_PAGE_TITLE = 'Personal home page of Samidhya Sarker (Torsho)'
+
 LANDING_PAGE_ABOUT = { 'title': "",
                         'details': """Hello I am Samidhya Sarker. I am an aspiring Software Engineer currently working at Concitus.
                                       My old blogs can be found at 
