@@ -75,7 +75,7 @@ RELATIVE_URLS = True
 THEME = "./themes/elegant"
 
 PLUGIN_PATHS = ['./plugins/']
-PLUGINS = ['sitemap']
+PLUGINS = ['sitemap', 'tipue_search']
 
 STATIC_PATHS = ['haglSim', 'images', 'extra']
 
