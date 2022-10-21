@@ -6,7 +6,7 @@ AUTHOR = 'Samidhya Sarker'
 SITENAME = """
 <span style=color:black;">[</span><span style="color:darkblue;">torsho</span><span style="color:#AA1032;">@</span><span style=color:black;">localhost]</span>
 """
-SITEURL = 'https://desertSniper87.github.io'
+SITEURL = 'https://torsho.me'
 
 PATH = 'content'
 
@@ -87,7 +87,7 @@ EXTRA_PATH_METADATA = {
     # 'extra/README': {'path': 'README'},
 }
 
-COMMENTO_SITENAME = 'desertsniper87.github.io'
+COMMENTO_SITENAME = 'torsho.me'
 
 ARTICLE_EXCLUDES = ['haglSim']
 
