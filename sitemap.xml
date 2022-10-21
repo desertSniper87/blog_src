@@ -4,49 +4,49 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://desertsniper87.github.io/</loc>
-<lastmod>2022-10-21T22:10:36-00:00</lastmod>
+<loc>https://torsho.me/</loc>
+<lastmod>2022-10-21T22:12:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://desertsniper87.github.io/sni.html</loc>
+<loc>https://torsho.me/sni.html</loc>
 <lastmod>2021-10-31T00:00:00+06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://desertsniper87.github.io/debian-mips-qemu.html</loc>
+<loc>https://torsho.me/debian-mips-qemu.html</loc>
 <lastmod>2019-05-18T00:00:00+06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://desertsniper87.github.io/intellij-vim.html</loc>
+<loc>https://torsho.me/intellij-vim.html</loc>
 <lastmod>2019-05-09T00:00:00+06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://desertsniper87.github.io/vbox-srv.html</loc>
+<loc>https://torsho.me/vbox-srv.html</loc>
 <lastmod>2019-04-20T00:00:00+06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://desertsniper87.github.io/sicp.html</loc>
+<loc>https://torsho.me/sicp.html</loc>
 <lastmod>2018-05-05T00:00:00+06:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://desertsniper87.github.io/author/samidhya-sarker.html</loc>
+<loc>https://torsho.me/author/samidhya-sarker.html</loc>
 <lastmod>2021-10-31T00:00:00+06:02</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
