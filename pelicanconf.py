@@ -95,8 +95,8 @@ ARTICLE_EXCLUDES = ['haglSim']
 LANDING_PAGE_TITLE = 'Home page of Samidhya Sarker (Torsho)'
 
 LANDING_PAGE_ABOUT = { 'title': "",
-                        'details': """Hello I am Samidhya Sarker. I am an aspiring Software Engineer currently working at Concitus.
-                                      My old blogs can be found at 
+                        'details': """Hello I am Samidhya Sarker. I am a Software Engineer currently working at Concitus.
+                                      My old blogs can be found at
                                       <a href="https://www.facebook.com/desertsniper87/notes"> Facebook Notes,</a>
                                       <a href="https://medium.com/@desertsniper87"> Medium, </a>
                                       <a href="https://desertsniper87.wordpress.com"> WordPress </a>
