@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://torsho.me/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://torsho.me/theme/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://desertsniper87.github.io/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://desertsniper87.github.io/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -18,14 +18,14 @@
 <meta name="keywords" content=", computing, " />
 
 <meta property="og:title" content="Opening intellij source in vim "/>
-<meta property="og:url" content="https://torsho.me/intellij-vim.html" />
-<meta property="og:description" content="/run/current-system/sw/bin/urxvt -e sh -c &#34;vim --servername &#34;intellij&#34; --remote +$LineNumber$ $FilePath$&#34; $ProjectFileDir$" />
+<meta property="og:url" content="https://desertsniper87.github.io/intellij-vim.html" />
+<meta property="og:description" content="Terminal Emulator: rxvt Location of URXVT In nixos /run/current-system/sw/bin/urxvt In ubuntu /usr/bin/urxvt -e sh -c &#34;vim --servername &#34;intellij&#34; --remote +$LineNumber$ $FilePath$&#34; $ProjectFileDir$" />
 <meta property="og:site_name" content="[torsho@localhost]" />
 <meta property="og:article:author" content="Samidhya Sarker" />
 <meta property="og:article:published_time" content="2019-05-09T00:00:00+06:00" />
 <meta property="og:article:modified_time" content="2019-05-09T00:00:00+06:00" />
 <meta name="twitter:title" content="Opening intellij source in vim ">
-<meta name="twitter:description" content="/run/current-system/sw/bin/urxvt -e sh -c &#34;vim --servername &#34;intellij&#34; --remote +$LineNumber$ $FilePath$&#34; $ProjectFileDir$">
+<meta name="twitter:description" content="Terminal Emulator: rxvt Location of URXVT In nixos /run/current-system/sw/bin/urxvt In ubuntu /usr/bin/urxvt -e sh -c &#34;vim --servername &#34;intellij&#34; --remote +$LineNumber$ $FilePath$&#34; $ProjectFileDir$">
 
         <title>Opening intellij source in vim  · [torsho@localhost]
 </title>
@@ -43,21 +43,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-                        <a class="brand" href="https://torsho.me/"><span class=site-name>
+                        <a class="brand" href="https://desertsniper87.github.io/"><span class=site-name>
 <span style=color:black;">[</span><span style="color:darkblue;">torsho</span><span style="color:#AA1032;">@</span><span style=color:black;">localhost]</span>
 </span></a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right top-menu">
                                 <li >
                                     <a href=
-                                       https://torsho.me
+                                       https://desertsniper87.github.io
                                     >Home</a>
                                 </li>
-                                <li ><a href="https://torsho.me/pages/cv.html">CV</a></li>
-                                <li ><a href="https://torsho.me/categories.html">Categories</a></li>
-                                <li ><a href="https://torsho.me/tags.html">Tags</a></li>
-                                <li ><a href="https://torsho.me/archives.html">Archives</a></li>
-                                <li><form class="navbar-search" action="https://torsho.me/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                                <li ><a href="https://desertsniper87.github.io/categories.html">Categories</a></li>
+                                <li ><a href="https://desertsniper87.github.io/tags.html">Tags</a></li>
+                                <li ><a href="https://desertsniper87.github.io/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="https://desertsniper87.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
                         </div>
                     </div>
@@ -71,7 +70,7 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://torsho.me/intellij-vim.html">
+            <a href="https://desertsniper87.github.io/intellij-vim.html">
                 Opening intellij source in vim
             </a>
         </h1>
@@ -83,15 +82,20 @@
             
             <!-- Status: draft -->
 
-<div class="highlight"><pre><span></span><code><span class="err">/run/current-system/sw/bin/urxvt</span>
+<p>Terminal Emulator: rxvt</p>
+<h2>Location of URXVT</h2>
+<h3>In nixos</h3>
+<div class="highlight"><pre><span></span><code>/run/current-system/sw/bin/urxvt
 </code></pre></div>
 
-
-<div class="highlight"><pre><span></span><code><span class="err">-e sh -c &quot;vim --servername &quot;intellij&quot; --remote +$LineNumber$ $FilePath$&quot;</span>
+<h3>In ubuntu</h3>
+<div class="highlight"><pre><span></span><code>/usr/bin/urxvt
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code>-e<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;vim --servername &quot;</span>intellij<span class="s2">&quot; --remote +</span><span class="nv">$LineNumber</span>$<span class="s2"> </span><span class="nv">$FilePath</span>$<span class="s2">&quot;</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="err">$ProjectFileDir$</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$ProjectFileDir</span>$
 </code></pre></div>
 
 
@@ -111,10 +115,10 @@
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-05-09T00:00:00+06:00">বৃহঃ 09 মে 2019</time>
+            <time itemprop="dateCreated" datetime="2019-05-09T00:00:00+06:00">Thu 09 May 2019</time>
 
             <h4>Category</h4>
-            <a class="category-link" href="https://torsho.me/categories.html#computing-ref">computing</a>
+            <a class="category-link" href="https://desertsniper87.github.io/categories.html#computing-ref">computing</a>
 <h4>Contact</h4>
 <div id="sidebar-social-link">
     <a href="http://www.facebook.com/desertsniper87" title="" target="_blank" rel="nofollow noopener noreferrer">
@@ -229,7 +233,7 @@
     </div>
 </footer>            <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="https://torsho.me/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script src="https://desertsniper87.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
         <script>
             function validateForm(query)
             {

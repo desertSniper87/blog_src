@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://torsho.me/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://torsho.me/theme/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://desertsniper87.github.io/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://desertsniper87.github.io/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -18,7 +18,7 @@
 <meta name="keywords" content=", computing, " />
 
 <meta property="og:title" content="Using SNI to run multiple SSL enabled sites in a single webserver. "/>
-<meta property="og:url" content="https://torsho.me/sni.html" />
+<meta property="og:url" content="https://desertsniper87.github.io/sni.html" />
 <meta property="og:description" content="The Problem Sometimes we want to host multiple sites in the same server to minimize on server costs. We may run applications on different ports or map subdomains to different directories. But if we want to server websites on different domains, we have to take different approaches. Solution: VirtualHosts Virtual …" />
 <meta property="og:site_name" content="[torsho@localhost]" />
 <meta property="og:article:author" content="Samidhya Sarker" />
@@ -43,21 +43,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-                        <a class="brand" href="https://torsho.me/"><span class=site-name>
+                        <a class="brand" href="https://desertsniper87.github.io/"><span class=site-name>
 <span style=color:black;">[</span><span style="color:darkblue;">torsho</span><span style="color:#AA1032;">@</span><span style=color:black;">localhost]</span>
 </span></a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right top-menu">
                                 <li >
                                     <a href=
-                                       https://torsho.me
+                                       https://desertsniper87.github.io
                                     >Home</a>
                                 </li>
-                                <li ><a href="https://torsho.me/pages/cv.html">CV</a></li>
-                                <li ><a href="https://torsho.me/categories.html">Categories</a></li>
-                                <li ><a href="https://torsho.me/tags.html">Tags</a></li>
-                                <li ><a href="https://torsho.me/archives.html">Archives</a></li>
-                                <li><form class="navbar-search" action="https://torsho.me/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                                <li ><a href="https://desertsniper87.github.io/categories.html">Categories</a></li>
+                                <li ><a href="https://desertsniper87.github.io/tags.html">Tags</a></li>
+                                <li ><a href="https://desertsniper87.github.io/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="https://desertsniper87.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
                         </div>
                     </div>
@@ -71,7 +70,7 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://torsho.me/sni.html">
+            <a href="https://desertsniper87.github.io/sni.html">
                 Using SNI to run multiple SSL enabled sites in a single webserver.
             </a>
         </h1>
@@ -89,28 +88,27 @@
 <p>Virtual hosting is a method for hosting multiple domain names (with separate handling of each name) on a single server (or pool of servers).</p>
 <p>Suppose, we have two websites having urls: www.example1.com and www.example2.com. For an apache web server, we can put the source of two servers in /var/www/example1 and /var/www/html2.</p>
 <p>We can then host both of those servers. We can change /etc/httpd/conf/httpd.conf:</p>
-<div class="highlight"><pre><span></span><code># Ensure that Apache listens on port 80
-Listen 80
-<span class="nt">&lt;VirtualHost</span> <span class="err">*:80</span><span class="nt">&gt;</span>
-    DocumentRoot &quot;/www/example1&quot;
-    ServerName www.example.com
+<div class="highlight"><pre><span></span><code>#<span class="w"> </span>Ensure<span class="w"> </span>that<span class="w"> </span>Apache<span class="w"> </span>listens<span class="w"> </span>on<span class="w"> </span>port<span class="w"> </span>80
+Listen<span class="w"> </span>80
+<span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="err">*:80</span><span class="nt">&gt;</span>
+<span class="w">    </span>DocumentRoot<span class="w"> </span>&quot;/www/example1&quot;
+<span class="w">    </span>ServerName<span class="w"> </span>www.example.com
 
-    # Other directives here
+<span class="w">    </span>#<span class="w"> </span>Other<span class="w"> </span>directives<span class="w"> </span>here
 <span class="nt">&lt;/VirtualHost&gt;</span>
 
-<span class="nt">&lt;VirtualHost</span> <span class="err">*:80</span><span class="nt">&gt;</span>
-    DocumentRoot &quot;/www/example2&quot;
-    ServerName www.example.org
+<span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="err">*:80</span><span class="nt">&gt;</span>
+<span class="w">    </span>DocumentRoot<span class="w"> </span>&quot;/www/example2&quot;
+<span class="w">    </span>ServerName<span class="w"> </span>www.example.org
 
-    # Other directives here
+<span class="w">    </span>#<span class="w"> </span>Other<span class="w"> </span>directives<span class="w"> </span>here
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
-
 
 <h3>Drawbacks of VirtualHosts</h3>
 <p>SSL/TLS is a good way to provide security directly to the end users. If we want to use SSL/TLS encryption on connections using VirtualHosts, another complication arise.</p>
 <p>If we revisit the SSL/TLS basics and the OSI networking model, the TLS connection happens on layer 4 of the layer. The problem with using named virtual hosts over SSL is that named virtual hosts rely on knowing what hostname is being requested, and the request can't be read until the SSL connection is established. </p>
-<p><img alt="SNI connection" src="https://torsho.me/images/tls-syn-ack.svg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
+<p><img alt="SNI connection" src="https://desertsniper87.github.io/images/tls-syn-ack.svg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
 <p>So, VirtualHosts cannot be used in addition to SSL certificates. </p>
 <h3>Common certificate</h3>
 <p>This problem can be solved if we used a common domain. For example we may have a common domain named example.com and have subdomain 1.example.com and 2.example.com. But it is not practical as it hurts SEO score of the two sites.</p>
@@ -133,83 +131,81 @@ Listen 80
 <h3>Server configuration:</h3>
 <h4>Apache</h4>
 <p>Edit /etc/httpd/conf/httpd.conf:</p>
-<div class="highlight"><pre><span></span><code># Ensure that Apache listens on port 443
-Listen 443
+<div class="highlight"><pre><span></span><code>#<span class="w"> </span>Ensure<span class="w"> </span>that<span class="w"> </span>Apache<span class="w"> </span>listens<span class="w"> </span>on<span class="w"> </span>port<span class="w"> </span>443
+Listen<span class="w"> </span>443
 
-# Listen for virtual host requests on all IP addresses
-NameVirtualHost *:443
+#<span class="w"> </span>Listen<span class="w"> </span>for<span class="w"> </span>virtual<span class="w"> </span>host<span class="w"> </span>requests<span class="w"> </span>on<span class="w"> </span>all<span class="w"> </span>IP<span class="w"> </span>addresses
+NameVirtualHost<span class="w"> </span>*:443
 
-# Go ahead and accept connections for these vhosts
-# from non-SNI clients
-SSLStrictSNIVHostCheck off
+#<span class="w"> </span>Go<span class="w"> </span>ahead<span class="w"> </span>and<span class="w"> </span>accept<span class="w"> </span>connections<span class="w"> </span>for<span class="w"> </span>these<span class="w"> </span>vhosts
+#<span class="w"> </span>from<span class="w"> </span>non-SNI<span class="w"> </span>clients
+SSLStrictSNIVHostCheck<span class="w"> </span>off
 
-<span class="nt">&lt;VirtualHost</span> <span class="err">*:443</span><span class="nt">&gt;</span>
-  # Because this virtual host is defined first, it will
-  # be used as the default if the hostname is not received
-  # in the SSL handshake, e.g. if the browser doesn&#39;t support
-  # SNI.
-  DocumentRoot /www/example1
-  ServerName www.example.com
+<span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="err">*:443</span><span class="nt">&gt;</span>
+<span class="w">  </span>#<span class="w"> </span>Because<span class="w"> </span>this<span class="w"> </span>virtual<span class="w"> </span>host<span class="w"> </span>is<span class="w"> </span>defined<span class="w"> </span>first,<span class="w"> </span>it<span class="w"> </span>will
+<span class="w">  </span>#<span class="w"> </span>be<span class="w"> </span>used<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>if<span class="w"> </span>the<span class="w"> </span>hostname<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>received
+<span class="w">  </span>#<span class="w"> </span>in<span class="w"> </span>the<span class="w"> </span>SSL<span class="w"> </span>handshake,<span class="w"> </span>e.g.<span class="w"> </span>if<span class="w"> </span>the<span class="w"> </span>browser<span class="w"> </span>doesn&#39;t<span class="w"> </span>support
+<span class="w">  </span>#<span class="w"> </span>SNI.
+<span class="w">  </span>DocumentRoot<span class="w"> </span>/www/example1
+<span class="w">  </span>ServerName<span class="w"> </span>www.example.com
 
-  # Other directives here
+<span class="w">  </span>#<span class="w"> </span>Other<span class="w"> </span>directives<span class="w"> </span>here
 
-  SSLCertificateFile /etc/ssl/ssl-example1.crt
-  SSLCertificateKeyFile /etc/ssl/ssl-example1.key
-  SSLCertificateChainFile /etc/ssl/ssl-example1.ca-bundle
+<span class="w">  </span>SSLCertificateFile<span class="w"> </span>/etc/ssl/ssl-example1.crt
+<span class="w">  </span>SSLCertificateKeyFile<span class="w"> </span>/etc/ssl/ssl-example1.key
+<span class="w">  </span>SSLCertificateChainFile<span class="w"> </span>/etc/ssl/ssl-example1.ca-bundle
 
 <span class="nt">&lt;/VirtualHost&gt;</span>
 
-<span class="nt">&lt;VirtualHost</span> <span class="err">*:443</span><span class="nt">&gt;</span>
-  DocumentRoot /www/example2
-  ServerName www.example2.org
+<span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="err">*:443</span><span class="nt">&gt;</span>
+<span class="w">  </span>DocumentRoot<span class="w"> </span>/www/example2
+<span class="w">  </span>ServerName<span class="w"> </span>www.example2.org
 
-  SSLCertificateFile /etc/ssl/ssl-example2.crt
-  SSLCertificateKeyFile /etc/ssl/ssl-example2.key
-  SSLCertificateChainFile /etc/ssl/ssl-example2.ca-bundle
-  # Other directives here
+<span class="w">  </span>SSLCertificateFile<span class="w"> </span>/etc/ssl/ssl-example2.crt
+<span class="w">  </span>SSLCertificateKeyFile<span class="w"> </span>/etc/ssl/ssl-example2.key
+<span class="w">  </span>SSLCertificateChainFile<span class="w"> </span>/etc/ssl/ssl-example2.ca-bundle
+<span class="w">  </span>#<span class="w"> </span>Other<span class="w"> </span>directives<span class="w"> </span>here
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
-
 
 <h4>Nginx</h4>
 <p>Change /etc/nginx/nginx.conf (Or you can put these code in sites_enabled/site_available):</p>
-<div class="highlight"><pre><span></span><code><span class="n">server</span> <span class="err">{</span>
-        <span class="n">root</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">example1</span><span class="p">;</span>
-        <span class="k">index</span> <span class="k">index</span><span class="p">.</span><span class="n">html</span> <span class="k">index</span><span class="p">.</span><span class="n">htm</span> <span class="k">index</span><span class="p">.</span><span class="n">nginx</span><span class="o">-</span><span class="n">debian</span><span class="p">.</span><span class="n">html</span> <span class="k">index</span><span class="p">.</span><span class="n">php</span><span class="p">;</span>
-        <span class="k">server_name</span> <span class="n">example1</span><span class="p">.</span><span class="n">com</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="n">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">example1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">index</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">htm</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">nginx</span><span class="o">-</span><span class="n">debian</span><span class="o">.</span><span class="n">html</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="p">;</span>
+<span class="w">        </span><span class="n">server_name</span><span class="w"> </span><span class="n">example1</span><span class="o">.</span><span class="n">com</span><span class="p">;</span>
 
-        <span class="k">location</span> <span class="o">/</span> <span class="err">{</span>
-                <span class="n">try_files</span> <span class="err">$</span><span class="n">uri$args</span> <span class="err">$</span><span class="n">uri$args</span><span class="o">/</span> <span class="o">/</span><span class="k">index</span><span class="p">.</span><span class="n">html</span><span class="p">;</span>
-        <span class="err">}</span>
+<span class="w">        </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">try_files</span><span class="w"> </span><span class="o">$</span><span class="n">uri</span><span class="o">$</span><span class="n">args</span><span class="w"> </span><span class="o">$</span><span class="n">uri</span><span class="o">$</span><span class="n">args</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 
-        <span class="k">listen</span> <span class="mi">443</span> <span class="n">ssl</span><span class="p">;</span> 
-        <span class="n">ssl_certificate</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="p">.</span><span class="n">crt</span><span class="p">;</span>
-        <span class="n">ssl_certificate_key</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="p">.</span><span class="k">key</span><span class="p">;</span>
-        <span class="n">include</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="p">.</span><span class="n">ca</span><span class="o">-</span><span class="n">bundle</span><span class="p">;</span>
-        <span class="n">ssl_dhparam</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">letsencrypt</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">dhparams</span><span class="p">.</span><span class="n">pem</span><span class="p">;</span> 
+<span class="w">        </span><span class="n">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="n">ssl</span><span class="p">;</span><span class="w"> </span>
+<span class="w">        </span><span class="n">ssl_certificate</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="o">.</span><span class="n">crt</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ssl_certificate_key</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="o">.</span><span class="n">key</span><span class="p">;</span>
+<span class="w">        </span><span class="n">include</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="o">.</span><span class="n">ca</span><span class="o">-</span><span class="n">bundle</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ssl_dhparam</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">letsencrypt</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">dhparams</span><span class="o">.</span><span class="n">pem</span><span class="p">;</span><span class="w"> </span>
 
-        <span class="o">#</span> <span class="n">Other</span> <span class="n">directives</span>
-<span class="err">}</span>
+<span class="w">        </span><span class="c1"># Other directives</span>
+<span class="p">}</span>
 
-<span class="n">server</span> <span class="err">{</span>
-        <span class="n">root</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">example1</span><span class="p">;</span>
-        <span class="k">index</span> <span class="k">index</span><span class="p">.</span><span class="n">html</span> <span class="k">index</span><span class="p">.</span><span class="n">htm</span> <span class="k">index</span><span class="p">.</span><span class="n">nginx</span><span class="o">-</span><span class="n">debian</span><span class="p">.</span><span class="n">html</span> <span class="k">index</span><span class="p">.</span><span class="n">php</span><span class="p">;</span>
-        <span class="k">server_name</span> <span class="n">example2</span><span class="p">.</span><span class="n">com</span><span class="p">;</span>
+<span class="n">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">example1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">index</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">htm</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">nginx</span><span class="o">-</span><span class="n">debian</span><span class="o">.</span><span class="n">html</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="p">;</span>
+<span class="w">        </span><span class="n">server_name</span><span class="w"> </span><span class="n">example2</span><span class="o">.</span><span class="n">com</span><span class="p">;</span>
 
-        <span class="k">location</span> <span class="o">/</span> <span class="err">{</span>
-                <span class="n">try_files</span> <span class="err">$</span><span class="n">uri$args</span> <span class="err">$</span><span class="n">uri$args</span><span class="o">/</span> <span class="o">/</span><span class="k">index</span><span class="p">.</span><span class="n">html</span><span class="p">;</span>
-        <span class="err">}</span>
+<span class="w">        </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">try_files</span><span class="w"> </span><span class="o">$</span><span class="n">uri</span><span class="o">$</span><span class="n">args</span><span class="w"> </span><span class="o">$</span><span class="n">uri</span><span class="o">$</span><span class="n">args</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 
-        <span class="k">listen</span> <span class="mi">443</span> <span class="n">ssl</span><span class="p">;</span> <span class="o">#</span> <span class="n">managed</span> <span class="k">by</span> <span class="n">Certbot</span><span class="p">;</span>
-        <span class="n">ssl_certificate</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="p">.</span><span class="n">crt</span><span class="p">;</span>
-        <span class="n">ssl_certificate_key</span>  <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="p">.</span><span class="k">key</span><span class="p">;</span>
-        <span class="n">include</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="p">.</span><span class="n">ca</span><span class="o">-</span><span class="n">bundle</span><span class="p">;</span>
-        <span class="n">ssl_dhparam</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">letsencrypt</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">dhparams</span><span class="p">.</span><span class="n">pem</span><span class="p">;</span> 
+<span class="w">        </span><span class="n">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="n">ssl</span><span class="p">;</span><span class="w"> </span><span class="c1"># managed by Certbot;</span>
+<span class="w">        </span><span class="n">ssl_certificate</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="o">.</span><span class="n">crt</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ssl_certificate_key</span><span class="w">  </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="o">.</span><span class="n">key</span><span class="p">;</span>
+<span class="w">        </span><span class="n">include</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ssl</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">example1</span><span class="o">.</span><span class="n">ca</span><span class="o">-</span><span class="n">bundle</span><span class="p">;</span>
+<span class="w">        </span><span class="n">ssl_dhparam</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">letsencrypt</span><span class="o">/</span><span class="n">ssl</span><span class="o">-</span><span class="n">dhparams</span><span class="o">.</span><span class="n">pem</span><span class="p">;</span><span class="w"> </span>
 
-        <span class="o">#</span> <span class="n">Other</span> <span class="n">directives</span>
-<span class="err">}</span>
+<span class="w">        </span><span class="c1"># Other directives</span>
+<span class="p">}</span>
 </code></pre></div>
-
 
 <p>Certifiates can be obtained by letsencrypt or zero.ssl or any commercial certificate providers.</p>
 
@@ -230,10 +226,10 @@ SSLStrictSNIVHostCheck off
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2021-10-31T00:00:00+06:00">রবি 31 অক্টোবর 2021</time>
+            <time itemprop="dateCreated" datetime="2021-10-31T00:00:00+06:00">Sun 31 October 2021</time>
 
             <h4>Category</h4>
-            <a class="category-link" href="https://torsho.me/categories.html#computing-ref">computing</a>
+            <a class="category-link" href="https://desertsniper87.github.io/categories.html#computing-ref">computing</a>
 <h4>Contact</h4>
 <div id="sidebar-social-link">
     <a href="http://www.facebook.com/desertsniper87" title="" target="_blank" rel="nofollow noopener noreferrer">
@@ -348,7 +344,7 @@ SSLStrictSNIVHostCheck off
     </div>
 </footer>            <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="https://torsho.me/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script src="https://desertsniper87.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
         <script>
             function validateForm(query)
             {

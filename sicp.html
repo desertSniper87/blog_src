@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://torsho.me/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://torsho.me/theme/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://desertsniper87.github.io/theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://desertsniper87.github.io/theme/css/custom.css" media="screen">
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -18,7 +18,7 @@
 <meta name="keywords" content="programming, algorithm, Computing, " />
 
 <meta property="og:title" content="What I had learnt from SICP. "/>
-<meta property="og:url" content="https://torsho.me/sicp.html" />
+<meta property="og:url" content="https://desertsniper87.github.io/sicp.html" />
 <meta property="og:description" content="hi there." />
 <meta property="og:site_name" content="[torsho@localhost]" />
 <meta property="og:article:author" content="Samidhya Sarker" />
@@ -43,21 +43,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-                        <a class="brand" href="https://torsho.me/"><span class=site-name>
+                        <a class="brand" href="https://desertsniper87.github.io/"><span class=site-name>
 <span style=color:black;">[</span><span style="color:darkblue;">torsho</span><span style="color:#AA1032;">@</span><span style=color:black;">localhost]</span>
 </span></a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right top-menu">
                                 <li >
                                     <a href=
-                                       https://torsho.me
+                                       https://desertsniper87.github.io
                                     >Home</a>
                                 </li>
-                                <li ><a href="https://torsho.me/pages/cv.html">CV</a></li>
-                                <li ><a href="https://torsho.me/categories.html">Categories</a></li>
-                                <li ><a href="https://torsho.me/tags.html">Tags</a></li>
-                                <li ><a href="https://torsho.me/archives.html">Archives</a></li>
-                                <li><form class="navbar-search" action="https://torsho.me/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                                <li ><a href="https://desertsniper87.github.io/categories.html">Categories</a></li>
+                                <li ><a href="https://desertsniper87.github.io/tags.html">Tags</a></li>
+                                <li ><a href="https://desertsniper87.github.io/archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="https://desertsniper87.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                             </ul>
                         </div>
                     </div>
@@ -71,7 +70,7 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://torsho.me/sicp.html">
+            <a href="https://desertsniper87.github.io/sicp.html">
                 What I had learnt from SICP.
             </a>
         </h1>
@@ -82,9 +81,8 @@
         <div class="span8 offset2 article-content">
             
             <!--Status: draft-->
-
 <p>I wrote this to make a point that, after 33 <em>(1985-2018)</em> years, the book <strong>Structure and Implementation of Programming language</strong> is still useful for leaning useful programming concepts.</p>
-<p><img alt="SICP Cover" src="https://torsho.me/images/SICP_cover.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<p><img alt="SICP Cover" src="https://desertsniper87.github.io/images/SICP_cover.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
 <br/>
 <br/>
 <em>From <a href="http://lambda-the-ultimate.org/node/5335"><strong>lambda-the-ultimate</strong> Programming by poking: why MIT stopped teaching SICP:</a></em></p>
@@ -127,7 +125,6 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">rat</span><span class="o">.</span><span class="n">numerator</span><span class="p">,</span> <span class="n">rat</span><span class="o">.</span><span class="n">denominator</span><span class="p">)</span>
 </code></pre></div>
 
-
 <p>Which yields <code>22 12</code>
 One of the recurring themes of the course is, how complex things can be constructed using simple objects. For example, in LISP, <code>cons</code> creates a pair by taking two arguments. We can implement them using python.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">cons</span><span class="p">:</span>
@@ -141,7 +138,6 @@ One of the recurring themes of the course is, how complex things can be construc
         <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;[&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="p">)</span> <span class="o">+</span><span class="s1">&#39;, &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;]&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-
 <p><code>car</code> returns the first part of the pair and <code>cdr</code> returns the second.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">car</span><span class="p">(</span><span class="n">cons</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">cons</span><span class="o">.</span><span class="n">head</span>
@@ -149,7 +145,6 @@ One of the recurring themes of the course is, how complex things can be construc
 <span class="k">def</span> <span class="nf">cdr</span><span class="p">(</span><span class="n">cons</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">cons</span><span class="o">.</span><span class="n">tail</span>
 </code></pre></div>
-
 
 <p>We can implement a list using the <code>cons</code> construct by merging two cons.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">list_</span><span class="p">(</span><span class="n">cons</span><span class="p">):</span>
@@ -162,7 +157,6 @@ One of the recurring themes of the course is, how complex things can be construc
             <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">list_</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
 </code></pre></div>
 
-
 <p>So <code>print(list_([1, 2, 3, 4]))</code> returns   <code>[1, [2, [3, [4, None]]]]</code></p>
 <p>We can do a simple operation like scaling by 10: </p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">scale_list</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
@@ -172,13 +166,11 @@ One of the recurring themes of the course is, how complex things can be construc
         <span class="k">return</span> <span class="n">cons</span><span class="p">(</span><span class="n">l</span><span class="o">.</span><span class="n">head</span><span class="o">*</span><span class="n">s</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 </code></pre></div>
 
-
 <p>So <code>print(scale_list(list_([1, 2, 3, 4]), 10))</code>  returns <code>[10, [20, [30, [40, None]]]]</code></p>
 <p>An interesting point is this: We need more abstractions the drown out the complexities in order the design elegant systems. So, we see from our example that, our list has become too complicated to use in real world. So, we introduce iteration<em>(In the book, it has been done using LISP lambda functions)</em></p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])))</span>
 <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
 </code></pre></div>
-
 
 <p><strong>(To be continued)</strong></p>
 
@@ -199,16 +191,16 @@ One of the recurring themes of the course is, how complex things can be construc
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2018-05-05T00:00:00+06:00">শনি 05 মে 2018</time>
+            <time itemprop="dateCreated" datetime="2018-05-05T00:00:00+06:00">Sat 05 May 2018</time>
 
             <h4>Category</h4>
-            <a class="category-link" href="https://torsho.me/categories.html#computing-ref">Computing</a>
+            <a class="category-link" href="https://desertsniper87.github.io/categories.html#computing-ref">Computing</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://torsho.me/tags.html#algorithm-ref">algorithm
+                <li><a href="https://desertsniper87.github.io/tags.html#algorithm-ref">algorithm
                     <span class="superscript">1</span>
 </a></li>
-                <li><a href="https://torsho.me/tags.html#programming-ref">programming
+                <li><a href="https://desertsniper87.github.io/tags.html#programming-ref">programming
                     <span class="superscript">2</span>
 </a></li>
             </ul>
@@ -326,7 +318,7 @@ One of the recurring themes of the course is, how complex things can be construc
     </div>
 </footer>            <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="https://torsho.me/theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script src="https://desertsniper87.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
         <script>
             function validateForm(query)
             {
